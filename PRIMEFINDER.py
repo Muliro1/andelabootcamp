@@ -1,4 +1,4 @@
-def primeFinder(n):
+def prime_finder(n):
         primes = []
         for i in range(n + 1):
                 if i == 0 or i == 1:
