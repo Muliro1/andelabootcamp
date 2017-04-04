@@ -1,4 +1,5 @@
 def prime_finder(n):
+        # this function takes in an integer n and returns a list of prime numbers from 0 to n
         primes = []
         for i in range(n + 1):
                 if i == 0 or i == 1:
