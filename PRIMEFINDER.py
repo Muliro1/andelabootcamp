@@ -10,9 +10,13 @@ class testCase(unittest.Testcase):
                 self.assertEqual(prime_finder(0), 'Invalid Argument')
         def test_if_arg_is_not_integer(self):
                 self.assertEqual(prime_finder('string'), 'Invalid Argument')
+        def test_if_empty(self):
+                self.assertEqual(prime_finder(), 'Function requires an integer argument')
 
 def prime_finder(n):
         # this function takes in an integer n and returns a list of prime numbers from 0 to n
+        if bool(n) == False:
+                return 'Function requires an integer argument'
         if n <= 0 or not isinstance(n, int):
                 return 'Invalid Argument'
         else:
