@@ -1,6 +1,6 @@
 def prime_finder(n):
         # this function takes in an integer n and returns a list of prime numbers from 0 to n
-        if n <= 0:
+        if n <= 0 or not isinstance(n, int):
                 return 'Invalid Argument'
         else:
                 primes = []
