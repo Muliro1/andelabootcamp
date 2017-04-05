@@ -30,7 +30,7 @@ def prime_finder(n):
                                         if i % x == 0:
                                                 isPrime = False
                                                 break
-                if isPrime:
-                        primes.append(i)
+                        if isPrime:
+                                primes.append(i)
         return primes
 
